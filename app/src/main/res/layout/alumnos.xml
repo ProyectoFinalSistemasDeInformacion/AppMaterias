@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Listado de Alumnos"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="37dp"
+        android:layout_toLeftOf="@+id/textView1"
+        android:text="Nombre" />
+
+    <EditText
+        android:id="@+id/editText_NombreDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/editText_NombreDatos"
+        android:layout_marginTop="36dp"
+        android:text="Apellido P" />
+
+    <EditText
+        android:id="@+id/editText_TipoDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/editText_NombreDatos"
+        android:ems="10"
+         />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_TipoDatos"
+        android:layout_marginTop="34dp"
+
+        android:layout_toLeftOf="@+id/editText_NombreDatos"
+        android:text="Apellido M" />
+
+    <EditText
+        android:id="@+id/editText_StockDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/editText_TipoDatos"
+        android:ems="10"
+
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/editText_StockDatos"
+        android:layout_marginTop="45dp"
+        android:text="Correo" />
+
+    <EditText
+        android:id="@+id/editText_PrecioDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/editText_StockDatos"
+        android:ems="10"
+
+        />
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:layout_below="@+id/btnAnterior"
+        android:layout_alignLeft="@+id/btnAnterior"
+        android:layout_alignStart="@+id/btnAnterior" />
+
+    <Button
+        android:id="@+id/btnNuevo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo"
+        android:layout_alignTop="@+id/btnAnterior"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:layout_below="@+id/btnModificar"
+        android:layout_alignLeft="@+id/btnModificar"
+        android:layout_alignStart="@+id/btnModificar" />
+
+    <Button
+        android:id="@+id/btnModificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modificar"
+        android:layout_below="@+id/btnNuevo"
+        android:layout_alignLeft="@+id/btnNuevo"
+        android:layout_alignStart="@+id/btnNuevo" />
+
+    <Button
+        android:id="@+id/btnAnterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="Anterior"
+        android:layout_below="@+id/editText_PrecioDatos"
+        android:layout_alignRight="@+id/editText_PrecioDatos"
+        android:layout_alignEnd="@+id/editText_PrecioDatos" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        android:id="@+id/btnreg"
+        android:layout_below="@+id/btnEliminar"
+        android:layout_alignRight="@+id/btnSiguiente"
+        android:layout_alignEnd="@+id/btnSiguiente" />
+
+</RelativeLayout>

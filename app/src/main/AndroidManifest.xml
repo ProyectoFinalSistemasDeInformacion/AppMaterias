@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.toshiba.basededatos3" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".VerDatos"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.toshiba.VerDatos" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Administrar"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.toshiba.Administrar" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Nuevo"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.toshiba.Nuevo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+        android:name=".ListaM"
+        android:label="@string/app_name" >
+        <intent-filter>
+            <action android:name="com.example.toshiba.ListaM" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+        <activity
+            android:name=".OpAlums"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.toshiba.OpAlums" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Alumnos"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.toshiba.Alumnos" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".NAlumnos"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.toshiba.NAlumnos" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>
